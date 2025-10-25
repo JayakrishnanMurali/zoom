@@ -97,12 +97,12 @@ export type EditorState = {
 
 ### Tasks
 
-- [ ] Create `src/components/Editor.tsx` component
-- [ ] Render each line from `EditorState.data`
-- [ ] Display line numbers (optional but helpful)
-- [ ] Create a cursor component/element
-- [ ] Style the editor to look like a text area
-- [ ] Make cursor blink with CSS animation
+- [x] Create `src/components/Editor.tsx` component
+- [x] Render each line from `EditorState.data`
+- [x] Display line numbers (optional but helpful)
+- [x] Create a cursor component/element
+- [x] Style the editor to look like a text area
+- [x] Make cursor blink with CSS animation
 
 ### File: `src/components/Editor.tsx`
 
@@ -130,9 +130,9 @@ interface EditorProps {
 
 ### Additional View Components
 
-- [ ] Create `src/components/EditorLine.tsx` (renders single line)
-- [ ] Create `src/components/Cursor.tsx` (blinking cursor)
-- [ ] Create `src/components/LineNumbers.tsx` (optional)
+- [x] Create `src/components/EditorLine.tsx` (renders single line)
+- [x] Create `src/components/Cursor.tsx` (blinking cursor)
+- [x] Create `src/components/LineNumbers.tsx` (optional)
 
 ---
 
@@ -146,13 +146,13 @@ interface EditorProps {
 
 ### Tasks
 
-- [ ] Create `src/hooks/useEditor.ts` custom hook
-- [ ] Initialize editor state
-- [ ] Implement `handleKeyPress()` - when user types
-- [ ] Implement `insertCharacter()` - add character at cursor
-- [ ] Implement `deleteCharacter()` - remove character (Backspace)
-- [ ] Implement `moveCursor()` - arrow keys
-- [ ] Implement `handleEnter()` - create new line
+- [x] Create `src/hooks/useEditor.ts` custom hook
+- [x] Initialize editor state
+- [x] Implement `handleKeyPress()` - when user types
+- [x] Implement `insertCharacter()` - add character at cursor
+- [x] Implement `deleteCharacter()` - remove character (Backspace)
+- [-] Implement `moveCursor()` - arrow keys
+- [-] Implement `handleEnter()` - create new line
 
 ### File: `src/hooks/useEditor.ts`
 
@@ -204,12 +204,12 @@ export function useEditor() {
 
 ### Tasks
 
-- [ ] Update `src/App.tsx` to use `useEditor` hook
-- [ ] Pass state to Editor component
-- [ ] Pass event handlers to Editor component
-- [ ] Set up keyboard event listeners
-- [ ] Test basic typing functionality
-- [ ] Test cursor movement
+- [x] Update `src/App.tsx` to use `useEditor` hook
+- [x] Pass state to Editor component
+- [x] Pass event handlers to Editor component
+- [x] Set up keyboard event listeners
+- [-] Test basic typing functionality
+- [-] Test cursor movement
 
 ### File: `src/App.tsx`
 

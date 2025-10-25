@@ -1,17 +1,14 @@
 import "./App.css";
-import { Editor } from "./core/components/Editor";
-import { DUMMY_EDITOR } from "./core/utils/dummy";
+import { Editor } from "./core/components/editor";
+import { useEditor } from "./core/hooks/useEditor";
 
 function App() {
+  const { state, handleKeyPress } = useEditor();
+
   return (
     <>
       <main className="main">
-        <Editor
-          state={DUMMY_EDITOR}
-          onKeyDown={() => {
-            // TODO
-          }}
-        />
+        <Editor state={state} showLineNumber onKeyDown={handleKeyPress} />
       </main>
     </>
   );

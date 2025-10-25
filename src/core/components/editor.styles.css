@@ -4,6 +4,11 @@
   gap: 0.5rem;
 }
 
+.editor-text {
+  display: flex;
+  align-items: center;
+}
+
 .cursor {
   width: 1.5px;
   height: 16px;

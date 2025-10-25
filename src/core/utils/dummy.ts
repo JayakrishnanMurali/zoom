@@ -3,28 +3,28 @@ import type { EditorState } from "../types/editor.types";
 export const DUMMY_EDITOR: EditorState = {
   data: [
     {
-      line: 1,
+      line: 0,
       text: "Hello, Jayakrishnan!!",
     },
     {
-      line: 2,
+      line: 1,
       text: "This is a sample text editor.",
     },
     {
-      line: 3,
+      line: 2,
       text: "yea!",
     },
     {
-      line: 4,
+      line: 3,
       text: "",
     },
   ],
   cursorPosition: {
-    column: 1,
-    line: 1,
+    column: 0,
+    line: 0,
   },
   selection: null,
-  totalLines: 3,
+  totalLines: 4,
   metadata: {
     createdAt: new Date(),
     filePath: "/",

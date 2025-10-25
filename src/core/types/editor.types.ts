@@ -17,7 +17,7 @@ export type Metadata = {
   filePath: string;
   createdAt: Date;
   updatedAt: Date;
-};
+} | null;
 
 export type EditorState = {
   totalLines: number;
@@ -32,3 +32,5 @@ export type IEditorView = {
   onKeyDown: (e: KeyboardEvent) => void;
   showLineNumber?: boolean;
 };
+
+export type CursorDirection = "up" | "down" | "right" | "left";
