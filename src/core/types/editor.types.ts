@@ -1,6 +1,6 @@
 export type TextBuffer = {
-  lineNumber: number;
-  lineText: string;
+  line: number;
+  text: string;
 };
 
 export type CursorPosition = {
@@ -25,4 +25,10 @@ export type EditorState = {
   cursorPosition: CursorPosition;
   selection: Selection;
   metadata: Metadata;
+};
+
+export type IEditorView = {
+  state: EditorState;
+  onKeyDown: (e: KeyboardEvent) => void;
+  showLineNumber?: boolean;
 };

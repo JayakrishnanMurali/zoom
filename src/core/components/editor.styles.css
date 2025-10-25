@@ -1,0 +1,22 @@
+.editor-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cursor {
+  width: 1.5px;
+  height: 16px;
+  background-color: black;
+  animation: blink 0.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

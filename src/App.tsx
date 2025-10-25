@@ -1,7 +1,18 @@
+import "./App.css";
+import { Editor } from "./core/components/Editor";
+import { DUMMY_EDITOR } from "./core/utils/dummy";
+
 function App() {
   return (
     <>
-      <main>Hello world</main>
+      <main className="main">
+        <Editor
+          state={DUMMY_EDITOR}
+          onKeyDown={() => {
+            // TODO
+          }}
+        />
+      </main>
     </>
   );
 }
